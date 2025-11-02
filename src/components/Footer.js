@@ -72,7 +72,7 @@ const Footer = () => {
                 "EU Compliances Docs",
               ].map((link) => (
                 <li key={link}>
-                  <a href="#">{link}</a>
+                  <a href="/">{link}</a>
                 </li>
               ))}
             </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
                 "Terms & Conditions",
               ].map((link) => (
                 <li key={link}>
-                  <a href="#">{link}</a>
+                  <a href="/">{link}</a>
                 </li>
               ))}
             </ul>
@@ -102,10 +102,10 @@ const Footer = () => {
           <div className="social-section">
             <h4>FOLLOW US</h4>
             <div className="social-links">
-              <a href="#" aria-label="Instagram">
+              <a href="/home" aria-label="Instagram">
                 📸
               </a>
-              <a href="#" aria-label="LinkedIn">
+              <a href="/home" aria-label="LinkedIn">
                 🔗
               </a>
             </div>
