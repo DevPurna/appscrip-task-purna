@@ -1,0 +1,185 @@
+.footer {
+  background-color: #333;
+  color: #f7f7f7;
+  padding: 3rem 2rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- Top Section ---------- */
+.top-footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter-section {
+  flex: 1 1 350px;
+}
+
+.newsletter-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.newsletter-section p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #333;
+}
+
+/* ---------- Contact Section ---------- */
+.contact-section {
+  flex: 1 1 250px;
+}
+
+.contact-section h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-section p {
+  margin: 0.3rem 0;
+}
+
+.contact-section small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* ---------- Divider ---------- */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* ---------- Bottom Section ---------- */
+.footer-bottom-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Quick Links */
+.quick-links {
+  flex: 1 1 200px;
+  color: white;
+}
+
+.quick-links h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links li {
+  margin-bottom: 0.5rem;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: wheat;
+}
+
+/* Social Section */
+.social-section {
+  flex: 1 1 250px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.accepts-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.payment-icons img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ---------- Footer Copy ---------- */
+.footer-copy {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .top-footer-section,
+  .footer-bottom-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+}

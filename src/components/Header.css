@@ -1,0 +1,93 @@
+.header {
+  padding: 16px 40px 0 40px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  user-select: none;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: black;
+}
+
+.text-logo {
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  margin-left: 250px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 22px;
+  font-size: 1.3rem;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.icon-btn:hover {
+  color: #555;
+}
+
+.language-select {
+  font-size: 1rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+/* Nav styling below the top row */
+.nav {
+  margin-top: 15px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 36px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover {
+  border-color: black;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px 0 20px;
+  }
+  .text-logo {
+    font-size: 1.4rem;
+  }
+  .nav ul {
+    gap: 18px;
+    font-size: 0.9rem;
+  }
+}
