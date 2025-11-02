@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# 🛍️ Product Listing Page (PLP) - mettā muse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional **React-based Product Listing Page (PLP)** replicating the design specified in the Figma file and reference images.  
+The page includes a header with navigation, filter sidebar, product grid, and footer with newsletter and contact details.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📚 Table of Contents
 
-### `npm start`
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Setup & Installation](#setup--installation)
+- [Folder Structure](#folder-structure)
+- [Available Scripts](#available-scripts)
+- [Usage](#usage)
+- [Design & Responsiveness](#design--responsiveness)
+- [API Integration](#api-integration)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧩 Project Overview
 
-### `npm test`
+This project is a **product listing page** that displays products fetched from a public API:  
+👉 [https://fakestoreapi.com/products](https://fakestoreapi.com/products)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### The page includes:
 
-### `npm run build`
+- A **sticky header** with logo, navigation links, and utility icons (search, wishlist, shopping cart, profile, language selector)
+- **Main heading** and descriptive paragraph
+- A **left sidebar** with filters like customizable checkbox and collapsible categories
+- A **responsive product grid** showing:
+  - Product images
+  - Labels (`NEW PRODUCT`, `OUT OF STOCK`)
+  - Title
+  - Wishlist heart
+  - “Sign in or Create an account to see pricing” notice
+- A **footer** containing:
+  - Newsletter subscription
+  - Contact information
+  - Currency details
+  - Quick links
+  - Social media links
+  - Accepted payment methods
+  - Copyright
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ✅ Responsive layout optimized for desktop, tablet, and mobile
+- ⚡ Dynamic product grid populated from the Fake Store API
+- 🧭 Interactive filters with collapsible categories and customizable option
+- ♿ Accessible elements with proper ARIA attributes
+- 🔍 SEO-friendly with semantic HTML structure
+- 📨 Newsletter subscription form (frontend only with alert on submit)
+- 🎨 Modular CSS for maintainability and scalability
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Technology Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React.js** (Functional Components + Hooks)
+- **CSS** (Modular CSS files per component)
+- **Fetch API** for data retrieval
+- **HTML5** and **ARIA** for accessibility
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Setup & Installation
 
-## Learn More
+### Prerequisites:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- npm or yarn package manager
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Steps:
 
-### Code Splitting
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 2️⃣ Install dependencies
+npm install
+# or
+yarn install
 
-### Analyzing the Bundle Size
+# 3️⃣ Start the development server
+npm start
+# or
+yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+📁 Folder Structure
+/src
+  /components
+    Header.js
+    Header.css
+    Filters.js
+    Filters.css
+    ProductCard.js
+    ProductCard.css
+    ProductGrid.js
+    ProductGrid.css
+    Footer.js
+    Footer.css
+  App.js
+  App.css
+  index.js
+/public
+  index.html
+README.md
+package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🔗 API Integration
 
-### Deployment
+Products are fetched via the Fake Store API:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+https://fakestoreapi.com/products
 
-### `npm run build` fails to minify
+Fields Used:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+image
+title
+id
+
+Pricing display is hidden and replaced with:
+
+“Sign in or Create an account to see pricing”
+```
